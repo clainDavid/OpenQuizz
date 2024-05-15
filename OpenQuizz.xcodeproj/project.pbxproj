@@ -106,10 +106,9 @@
 			children = (
 				0CD7E4262BF20D5600E39A07 /* SceneDelegate.swift */,
 				0CD7E4242BF20D5600E39A07 /* AppDelegate.swift */,
-				0C39157F2BF3FFEB0024300F /* Balham.otf */,
 				0CD7E42D2BF20D5700E39A07 /* Assets.xcassets */,
 				0CD7E42F2BF20D5700E39A07 /* LaunchScreen.storyboard */,
-				0CD7E4322BF20D5700E39A07 /* Info.plist */,
+				0C39157F2BF3FFEB0024300F /* Balham.otf */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -137,6 +136,7 @@
 		0CD7E4232BF20D5600E39A07 /* OpenQuizz */ = {
 			isa = PBXGroup;
 			children = (
+				0CD7E4322BF20D5700E39A07 /* Info.plist */,
 				0C9ED6B52BF5467D00D8608B /* Supporting Files */,
 				0C9ED6B22BF5461E00D8608B /* Model */,
 				0C9ED6B32BF5464000D8608B /* View */,
