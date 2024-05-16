@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C35E1FE2BF6617300AEE589 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35E1FD2BF6617300AEE589 /* Question.swift */; };
 		0C3915802BF3FFEB0024300F /* Balham.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0C39157F2BF3FFEB0024300F /* Balham.otf */; };
 		0CD7E4252BF20D5600E39A07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD7E4242BF20D5600E39A07 /* AppDelegate.swift */; };
 		0CD7E4272BF20D5600E39A07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD7E4262BF20D5600E39A07 /* SceneDelegate.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C35E1FD2BF6617300AEE589 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		0C39157F2BF3FFEB0024300F /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Balham.otf; sourceTree = "<group>"; };
 		0CD7E4212BF20D5600E39A07 /* OpenQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD7E4242BF20D5600E39A07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		0C9ED6B22BF5461E00D8608B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0C35E1FD2BF6617300AEE589 /* Question.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CD7E4292BF20D5600E39A07 /* ViewController.swift in Sources */,
+				0C35E1FE2BF6617300AEE589 /* Question.swift in Sources */,
 				0CD7E4252BF20D5600E39A07 /* AppDelegate.swift in Sources */,
 				0CD7E4272BF20D5600E39A07 /* SceneDelegate.swift in Sources */,
 			);
