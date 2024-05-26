@@ -35,6 +35,10 @@ class Game {
             print(questions)
             self.state = .ongoing
         }
+        
+        let name = Notification.Name(rawValue: "QuestionsLoaded")
+        let notification = Notification(name: name)
+        NotificationCenter.default.post(notification)
     }
 
     func answerCurrentQuestion(with answer: Bool) {
