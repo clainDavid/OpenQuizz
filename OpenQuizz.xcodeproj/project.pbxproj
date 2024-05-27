@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C35E1FE2BF6617300AEE589 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35E1FD2BF6617300AEE589 /* Question.swift */; };
-		0C3915802BF3FFEB0024300F /* Balham.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0C39157F2BF3FFEB0024300F /* Balham.otf */; };
 		0C60D96B2C03914200BB4E25 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60D96A2C03914200BB4E25 /* Game.swift */; };
 		0C60D96D2C03926A00BB4E25 /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60D96C2C03926A00BB4E25 /* QuestionManager.swift */; };
 		0CD7E4252BF20D5600E39A07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD7E4242BF20D5600E39A07 /* AppDelegate.swift */; };
@@ -20,6 +19,7 @@
 		0CD7E43C2BF20D5700E39A07 /* OpenQuizzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD7E43B2BF20D5700E39A07 /* OpenQuizzTests.swift */; };
 		0CD7E4462BF20D5700E39A07 /* OpenQuizzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD7E4452BF20D5700E39A07 /* OpenQuizzUITests.swift */; };
 		0CD7E4482BF20D5700E39A07 /* OpenQuizzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD7E4472BF20D5700E39A07 /* OpenQuizzUITestsLaunchTests.swift */; };
+		0CF8E03B2C050D99002590D9 /* Balham.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CF8E03A2C050D99002590D9 /* Balham.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		0C35E1FD2BF6617300AEE589 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		0C39157F2BF3FFEB0024300F /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Balham.otf; sourceTree = "<group>"; };
 		0C60D96A2C03914200BB4E25 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		0C60D96C2C03926A00BB4E25 /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
 		0CD7E4212BF20D5600E39A07 /* OpenQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +56,7 @@
 		0CD7E4412BF20D5700E39A07 /* OpenQuizzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenQuizzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CD7E4452BF20D5700E39A07 /* OpenQuizzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenQuizzUITests.swift; sourceTree = "<group>"; };
 		0CD7E4472BF20D5700E39A07 /* OpenQuizzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenQuizzUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0CF8E03A2C050D99002590D9 /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Balham.otf; path = ../../../Balham.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 				0CD7E4242BF20D5600E39A07 /* AppDelegate.swift */,
 				0CD7E42D2BF20D5700E39A07 /* Assets.xcassets */,
 				0CD7E42F2BF20D5700E39A07 /* LaunchScreen.storyboard */,
-				0C39157F2BF3FFEB0024300F /* Balham.otf */,
+				0CF8E03A2C050D99002590D9 /* Balham.otf */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -277,7 +277,7 @@
 			files = (
 				0CD7E42E2BF20D5700E39A07 /* Assets.xcassets in Resources */,
 				0CD7E4312BF20D5700E39A07 /* Base in Resources */,
-				0C3915802BF3FFEB0024300F /* Balham.otf in Resources */,
+				0CF8E03B2C050D99002590D9 /* Balham.otf in Resources */,
 				0CD7E42C2BF20D5600E39A07 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
