@@ -24,6 +24,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="New Game">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapNewGameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="vn2-Qr-gDo"/>
+                                </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Lcr-Ub-lwx">
                                 <rect key="frame" x="178" y="760" width="37" height="37"/>
@@ -62,6 +65,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.35686278339999999" green="0.41568624970000001" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Lcr-Ub-lwx" id="P1X-Iv-88e"/>
+                        <outlet property="newGameButton" destination="hag-IE-s6t" id="QbW-oW-Kam"/>
+                        <outlet property="questionView" destination="epj-O3-Mkx" id="zLe-E2-WRz"/>
+                        <outlet property="scoreLabel" destination="ecd-Ix-3Qq" id="Uqh-Ug-NJ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
