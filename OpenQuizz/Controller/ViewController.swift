@@ -23,7 +23,8 @@ class ViewController: UIViewController {
        
         startNewGame()
         
-        
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(dragQuestionView(_ :)))
+        questionView.addGestureRecognizer(panGestureRecognizer)
     }
     
     @objc func questionsLoaded() {
@@ -54,6 +55,25 @@ class ViewController: UIViewController {
         game.refresh()
     }
     
-
+    @objc func dragQuestionView(_ sender: UIPanGestureRecognizer) {
+        if game.state == .ongoing {
+            switch sender.state {
+            case .began, .changed:
+                transformQuestionViewWith(gesture: sender)
+            case .cancelled, .ended:
+                answerQuestion()
+            default:
+                break
+            }
+        }
+    }
+    
+    private func transformQuestionViewWith(gesture: UIPanGestureRecognizer) {
+        
+    }
+    
+    private func answerQuestion() {
+        
+    }
 }
 
