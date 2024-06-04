@@ -14,9 +14,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var questionView: QuestionView!
     
+    var game = Game()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let name = Notification.Name(rawValue: "QuestionsLoaded")
+        NotificationCenter.default.addObserver(self, selector: #selector(questionsLoaded), name: name, object: nil)
+       
+        startNewGame()
+        
+        
+    }
+    
+    @objc func questionsLoaded() {
+        activityIndicator.isHidden = true
+        newGameButton.isHidden = false
+            
+        //questionView.title = game.currentQuestion.title
+        if let currentQuestion = game.currentQuestion {
+            questionView.title = currentQuestion.title
+        } else {
+            questionView.title = "No questions available"
+        }
     }
     
     @IBAction func didTapNewGameButton() {
@@ -31,6 +50,8 @@ class ViewController: UIViewController {
         questionView.style = .standard
         
         scoreLabel.text = "0 / 10"
+        
+        game.refresh()
     }
     
 

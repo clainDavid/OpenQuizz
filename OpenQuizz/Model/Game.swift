@@ -15,15 +15,26 @@ class Game {
     private var questions = [Question]()
     private var currentIndex = 0
 
-    var state: State = .ongoing
+    //  var state: State = .ongoing
+    
+    var state: State = .over
 
     enum State {
         case ongoing, over
     }
 
-    var currentQuestion: Question {
+    /*
+        var currentQuestion: Question {
+        return questions[currentIndex]
+    }*/
+    
+    var currentQuestion: Question? {
+        guard !questions.isEmpty && currentIndex < questions.count else {
+            return nil
+        }
         return questions[currentIndex]
     }
+    
 
     func refresh() {
         score = 0
@@ -32,16 +43,22 @@ class Game {
         
         QuestionManager.shared.get { (questions) in
             self.questions = questions
-            print(questions)
-            self.state = .ongoing
+            //self.state = .ongoing
+            if !questions.isEmpty {
+                self.state = .ongoing
+            }
+            
+            let name = Notification.Name(rawValue: "QuestionsLoaded")
+            let notification = Notification(name: name)
+            NotificationCenter.default.post(notification)
         }
-        
-        let name = Notification.Name(rawValue: "QuestionsLoaded")
-        let notification = Notification(name: name)
-        NotificationCenter.default.post(notification)
     }
 
     func answerCurrentQuestion(with answer: Bool) {
+        guard let currentQuestion = currentQuestion else {
+            return
+        }
+        
         if (currentQuestion.isCorrect && answer) || (!currentQuestion.isCorrect && !answer) {
             score += 1
         }
